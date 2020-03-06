@@ -26,4 +26,18 @@ export default [
       babel(),
     ]
   },
+
+  // ES
+  {
+    input: 'index.js',
+    output: { file: 'es/index.js', format: 'es', indent: false },
+    external: makeExternalPredicate([
+      ...Object.keys(pkg.dependencies || {}),
+      ...Object.keys(pkg.peerDependencies || {}),
+    ]),
+    plugins: [
+      nodeResolve(),
+      babel(),
+    ],
+  },
 ]

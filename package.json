@@ -61,12 +61,14 @@
         "immutable": "^4.0.0-rc.9"
     },
     "files": [
-        "dist"
+        "dist",
+        "es"
     ],
     "main": "dist/index.js",
+    "module": "es/index.js",
     "scripts": {
         "test":    "BABEL_ENV=test npm run-script mocha -- --require babel-register spec.js",
-        "build":   "BABEL_ENV=release npm run-script rimraf -- ./dist && npm run-script mkdirp -- dist && rollup -c",
+        "build":   "BABEL_ENV=release npm run-script rimraf -- ./dist ./es && npm run-script mkdirp -- dist && rollup -c",
         "release": "npm run-script test && npm run-script build && npm publish --access public",
         "mkdirp":  "./node_modules/.bin/mkdirp",
         "mocha":   "./node_modules/.bin/mocha",

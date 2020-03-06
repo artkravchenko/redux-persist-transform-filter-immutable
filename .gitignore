@@ -3,5 +3,6 @@
 /.tern-project
 /node_modules/
 /dist/
+/es/
 /yarn.lock
 /yarn-error.log
