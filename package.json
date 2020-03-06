@@ -66,6 +66,7 @@
     ],
     "main": "dist/index.js",
     "module": "es/index.js",
+    "sideEffects": false,
     "scripts": {
         "test":    "BABEL_ENV=test npm run-script mocha -- --require babel-register spec.js",
         "build":   "BABEL_ENV=release npm run-script rimraf -- ./dist ./es && npm run-script mkdirp -- dist && rollup -c",
