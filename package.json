@@ -11,7 +11,7 @@
         "immutable"
     ],
     "license": "MIT",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": {
         "name": "Gabriel Schuster - actra.development",
         "email": "opensource@actra.de",
@@ -65,11 +65,11 @@
     "module": "es/index.js",
     "sideEffects": false,
     "scripts": {
-        "test":    "BABEL_ENV=test npm run-script mocha -- --require babel-register spec.js",
-        "build":   "BABEL_ENV=release npm run-script rimraf -- ./dist ./es && npm run-script mkdirp -- dist && rollup -c",
+        "test": "BABEL_ENV=test npm run-script mocha -- --require babel-register spec.js",
+        "build": "BABEL_ENV=release npm run-script rimraf -- ./dist ./es && npm run-script mkdirp -- dist && rollup -c",
         "release": "npm run-script test && npm run-script build && npm publish --access public",
-        "mkdirp":  "./node_modules/.bin/mkdirp",
-        "mocha":   "./node_modules/.bin/mocha",
-        "rimraf":  "./node_modules/.bin/rimraf"
+        "mkdirp": "./node_modules/.bin/mkdirp",
+        "mocha": "./node_modules/.bin/mocha",
+        "rimraf": "./node_modules/.bin/rimraf"
     }
 }
