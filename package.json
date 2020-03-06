@@ -1,5 +1,5 @@
 {
-    "name": "@actra-development-oss/redux-persist-transform-filter-immutable",
+    "name": "@artkravchenko/redux-persist-transform-filter-immutable",
     "description": "Filter transformator for redux-persist supporting immutable.js",
     "keywords": [
         "react",
@@ -17,15 +17,12 @@
         "email": "opensource@actra.de",
         "url": "http://www.actra.de/velopment"
     },
-    "homepage": "https://github.com/actra-development-oss/redux-persist-transform-filter-immutable#readme",
+    "homepage": "https://github.com/artkravchenko/redux-persist-transform-filter-immutable#readme",
     "repository": {
         "type": "git",
-        "url": "git@github.com:actra-development-oss/redux-persist-transform-filter-immutable.git"
+        "url": "git@github.com:artkravchenko/redux-persist-transform-filter-immutable.git"
     },
-    "bugs": {
-        "url": "https://github.com/actra-development-oss/redux-persist-transform-filter-immutable/issues",
-        "email": "opensource@actra.de"
-    },
+    "bugs": "https://github.com/artkravchenko/redux-persist-transform-filter-immutable/issues",
     "publishConfig": {
         "registry": "https://registry.npmjs.com/",
         "access": "public"
