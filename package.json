@@ -66,7 +66,7 @@
     "sideEffects": false,
     "scripts": {
         "test": "BABEL_ENV=test npm run-script mocha -- --require babel-register spec.js",
-        "build": "BABEL_ENV=release npm run-script rimraf -- ./dist ./es && npm run-script mkdirp -- dist && rollup -c",
+        "build": "npm run-script rimraf -- ./dist ./es && npm run-script mkdirp -- dist && BABEL_ENV=release rollup -c",
         "release": "npm run-script test && npm run-script build && npm publish --access public",
         "mkdirp": "./node_modules/.bin/mkdirp",
         "mocha": "./node_modules/.bin/mocha",
